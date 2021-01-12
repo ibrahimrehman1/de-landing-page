@@ -7,6 +7,18 @@
     font-family: Montserrat;
 }
 
+.hamburger{
+    display: none;
+}
+
+.burger{
+    color: white;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 1.6rem;
+}
+
 :root{
     --bg-color: black;
 }
@@ -48,7 +60,8 @@ nav{
 
 .header{
     position: relative;
-    top: 60px;
+    padding-top: 50px;
+    padding-bottom: 80px;
     padding-left: 60px;
     display: flex;
     flex-direction: column;
@@ -58,24 +71,20 @@ nav{
 
 .header > h1{
     font-size: 2rem;
-    flex: 1;
 }
 
 .header > h6{
     margin-top: 15px;
-    flex: 1;
 }
 
 
 .button{
-    position: relative;
     flex: 1;
-    top: 30px;
+    margin-top: 20px;
     font-weight: bold;
     padding: 1em 1.4em;
     border-radius: 10px;
     cursor: pointer;
-    flex: 1;
     background-color: transparent;
     width: 150px;
     color: white;
@@ -112,8 +121,6 @@ nav{
 }
 
 .main-content{
-    position: relative;
-    top: 150px;
     z-index: 10;
     background-color: white;
 }
@@ -123,10 +130,8 @@ nav{
 }
 
 .main-div-1{
-    position: relative;
-    top: 30px;
     text-align: center;
-    
+
 }
 
 .main-div-1 h6{
@@ -157,12 +162,16 @@ nav{
 
 .main-div-2 div{
     text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 
 .top-div-2{
     background-color: rgb(240, 240, 240);
-    padding: 3em;
+    padding: 4em 3em;
+    position: relative;
+    top: 40px;
 }
 
 .top-2-div-1{
@@ -209,13 +218,21 @@ ol{
     padding-top: 20px;
 }
 
+.stars{
+    color: rgba(255, 179, 0, 0.781);
+}
+
+.star-container{
+    margin-top: 10px;
+}
+
 .foot{
     background-color: black;
     padding: 2em;
     font-weight: bold;
     color: white;
     position: relative;
-    top: 200px;
+    top: 90px;
     display: block;
     text-align: center;
 }
@@ -241,6 +258,7 @@ ol{
 @media screen and (max-width: 700px){
     .main-div-2{
         flex-direction: column;
+        padding-top: 0px;
     }
 
     .main-div-2 > div{
@@ -268,3 +286,34 @@ ol{
 button:focus{
     outline-width: 0px;
 }
+
+@media screen and (max-width: 400px){
+    .main-div-2{
+        padding: 0px;
+    }
+    .header > h1{
+        font-size: 1.5rem;
+    }
+
+    .header > h6{
+        display: none;
+    }
+
+    .header > button{
+        margin-top: 50px;
+    }
+}
+
+/* @media screen and (max-width: 500px){
+    .hamburger{
+        display: block;
+    }
+
+    .nav-div{
+        display: none;
+    }
+
+    .burger:hover{
+        cursor: pointer;
+    }
+} */
