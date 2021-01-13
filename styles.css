@@ -1,23 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
 
 *{
     padding:0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Ubuntu;
+}
+
+h1, h2, h3, h4, h5, h6, a{
     font-family: Montserrat;
 }
 
-.hamburger{
-    display: none;
-}
-
-.burger{
-    color: white;
-    padding: 5px;
-    border: 2px solid white;
-    border-radius: 10px;
-    font-size: 1.6rem;
-}
 
 :root{
     --bg-color: black;
@@ -50,7 +45,6 @@ nav{
     color: white;
     padding: 0.6em;
     font-size: 1.2rem;
-    border-radius: 10px;
     margin-left: 20px;
     border: 2px solid white;
     cursor: pointer;
@@ -75,6 +69,7 @@ nav{
 
 .header > h6{
     margin-top: 15px;
+    font-weight: 400;
 }
 
 
@@ -88,6 +83,7 @@ nav{
     width: 150px;
     color: white;
     background-color: transparent;
+    font-family: Montserrat;
     
 }
 
@@ -107,8 +103,9 @@ nav{
     flex: 1;
     background-color: transparent;
     width: 150px;
-    color: black;
-    border: 1px solid black;
+    color: var(--bg-color);
+    border: 1px solid var(--bg-color);
+    font-family: Montserrat;
 }
 
 .button-2:hover{
@@ -182,7 +179,7 @@ nav{
 
 picture > img{
     border-radius: 20px;
-    box-shadow: 1px 1px 5px 1px black;
+    box-shadow: 1px 1px 5px 1px var(--bg-color);
 }
 
 section > p{
@@ -214,7 +211,7 @@ ol{
 }
 
 
-.top-div-3 > h6, .top-div-3 > p{
+.top-div-3 > h5, .top-div-3 > p{
     padding-top: 20px;
 }
 
@@ -227,7 +224,7 @@ ol{
 }
 
 .foot{
-    background-color: black;
+    background-color: var(--bg-color);
     padding: 2em;
     font-weight: bold;
     color: white;
@@ -316,13 +313,13 @@ button:focus{
 }
 
 @media screen and (max-width: 500px){
-    .nav-div > a:nth-child(4){
+    .nav-div > a:nth-child(5){
         display: none;
     }
 }
 
 @media screen and (max-width: 420px){
-    .nav-div > a:nth-child(3){
+    .nav-div > a:nth-child(6){
         display: none;
     }
 }
