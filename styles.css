@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6, a{
 }
 
 body{
-    background-image: url("./index.jpeg");
+    background-image: url("./images/background-image.jpeg");
     background-repeat: no-repeat;
     background-size: 100vw 400px;
 }
