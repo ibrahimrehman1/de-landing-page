@@ -323,3 +323,40 @@ button:focus{
         display: none;
     }
 }
+
+@media screen and (max-width: 450px){
+    h2{
+        font-size: 1.2rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    p{
+        font-size: .8rem
+    }
+
+    ol{
+        font-size: 0.8rem;
+    }
+
+    .header > h6{
+        margin-top: 30px;
+    }
+
+    .header > button{
+        margin-top: 40px;
+    }
+
+    .main-div-2 > div{
+        margin-top: 50px;
+    }
+
+    .top-div-3 > p, .top-div-3 > h5{
+        margin-top: 20px;
+    }
+
+    .top-div-2 img{
+        width: 150px !important;
+        height: 150px !important;
+    }
+}
