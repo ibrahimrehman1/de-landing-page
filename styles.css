@@ -9,6 +9,10 @@
     font-family: Ubuntu;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 h1, h2, h3, h4, h5, h6, a{
     font-family: Montserrat;
 }
@@ -312,17 +316,6 @@ button:focus{
     }
 }
 
-@media screen and (max-width: 500px){
-    .nav-div > a:nth-child(5){
-        display: none;
-    }
-}
-
-@media screen and (max-width: 420px){
-    .nav-div > a:nth-child(6){
-        display: none;
-    }
-}
 
 @media screen and (max-width: 450px){
     h2{
