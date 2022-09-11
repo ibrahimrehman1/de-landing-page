@@ -1,5 +1,3 @@
 # Full Responsive De Landing Page
 
-URL:
-
-https://ibrahimrehman1.github.io/landing-page-1/
+https://ibrahimrehman1.github.io/de-landing-page/
